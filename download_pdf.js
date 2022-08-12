@@ -1,3 +1,6 @@
+let scrollingElement = (document.scrollingElement || document.body);
+scrollingElement.scrollTop = scrollingElement.scrollHeight;
+
 let jspdf = document.createElement("script");
 jspdf.onload = function() {
     const ratio = 3.8;
